@@ -37,9 +37,9 @@ namespace Training_My_Memory
 
             Console.Write("Enter a number : ");
             int x = Console.Read();
-            if (x < 0)
+            if (x == 0)
             {
-                Console.WriteLine("Your number is negative");
+                Console.WriteLine("Your number is NULL");
 
             }
             else if(x > 0)
@@ -49,8 +49,22 @@ namespace Training_My_Memory
             }
             else
             {
-                Console.WriteLine("Your number is NULL");
+                Console.WriteLine("Your number is Positive");
             }
+
+
+
+            //Loops 
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine($"This is the instruction N{i}");
+            }
+
+            int j = 0;
+
+            while (j++ < 10)
+                Console.WriteLine($"i = {j}");
         }
     }
 }
