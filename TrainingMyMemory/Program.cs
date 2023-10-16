@@ -56,15 +56,55 @@ namespace Training_My_Memory
 
             //Loops 
 
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 10; i++)
             {
+                
+                if (i == 5)
+                    break;
+                else if (i == 2)
+                    continue;
                 Console.WriteLine($"This is the instruction N{i}");
             }
 
             int j = 0;
-
-            while (j++ < 10)
+            while (j < 10)
+            {
                 Console.WriteLine($"i = {j}");
+                j++;
+            }
+            
+
+            // Array stuff
+            Console.Write("list size (int) : ");
+            int len = int.Parse(Console.ReadLine());
+
+            string[] objs = new string[len];
+
+            int indx = 0;
+            foreach (string obj in objs)
+            {
+                if (indx > len)
+                    break;
+                Console.Write($"{indx+1}: Obj = ");
+                objs[indx] = Console.ReadLine();
+                indx++;
+            }
+            Console.Write("the list is = ");
+            foreach (string obj in objs)
+                Console.Write(obj + "\t");
+
+
+
+
+
+                
+
+
+
+
+
+
+
         }
     }
 }
